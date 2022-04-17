@@ -6,6 +6,7 @@
   --tertiary-color: #c5fec6;
   --quaternary-color: #e5fec5;
   --black: #392a35;
+  --white: #ffffff;
 }
 
 * {
@@ -26,5 +27,37 @@ body {
   max-width: 800px;
   margin: 2.2rem auto;
   padding: 2.5rem;
-  background-color: var(--tertiary-color);
+  background-color: var(--white);
+  border-radius: 0.5rem;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+form input {
+  font-size: 2rem;
+  height: 3rem;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--black);
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-top: 1.8rem;
+}
+
+form button:hover {
+  background-color: var(--black);
+  color: var(--primary-color);
 }
