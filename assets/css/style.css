@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 :root {
-  --primary-color: #29ffc9;
-  --secondary-color: #a3fec7;
-  --tertiary-color: #c5fec6;
-  --quaternary-color: #e5fec5;
-  --black: #392a35;
-  --white: #ffffff;
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
 }
 
 * {
@@ -17,29 +12,30 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--black);
-  font-family: 'Open Sans', sans-serif;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
 }
 
 .container {
-  max-width: 800px;
-  margin: 2.2rem auto;
-  padding: 2.5rem;
-  background-color: var(--white);
-  border-radius: 0.5rem;
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 form input, form label, form button {
   display: block;
   width: 100%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 10px;
 }
 
 form input {
-  font-size: 2rem;
-  height: 3rem;
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
 }
 
 form input:focus {
@@ -48,16 +44,15 @@ form input:focus {
 
 form button {
   border: none;
-  background-color: var(--primary-color);
-  color: var(--black);
-  font-size: 1.8rem;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
   font-weight: 700;
-  padding: 0.5rem;
+  height: 50px;
   cursor: pointer;
-  margin-top: 1.8rem;
+  margin-top: 30px;
 }
 
 form button:hover {
-  background-color: var(--black);
-  color: var(--primary-color);
+  background: var(--primary-color-darker);
 }
